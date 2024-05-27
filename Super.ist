@@ -1,8 +1,9 @@
 {
-  "FStringFastFlagCredit": Inst,
+  "FStringFastFlagCredit": "Inst",
   "FFlagHandleAltEnterFullscreenManually": false,
   "DFIntTaskSchedulerTargetFps": 7200000,
   "FFlagDebugSkyGray": true,
+  "FFlagDisableDPIScale": true,
   "FFlagFixGraphicsQuality": true,
   "FFlagDisablePostFx": true,
   "DFIntDebugFRMQualityLevelOverride": 1,
