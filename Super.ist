@@ -4,6 +4,7 @@
   "DFIntTaskSchedulerTargetFps": 7200000,
   "FFlagDebugSkyGray": true,
   "FFlagDisableDPIScale": true,
+  "FFlagDebugGraphicsPreferD3D11FL10": true,
   "FFlagFixGraphicsQuality": true,
   "FFlagDisablePostFx": true,
   "DFIntDebugFRMQualityLevelOverride": 1,
