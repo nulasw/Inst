@@ -1,8 +1,10 @@
 {
-  "FStringFastFlagCredit": Inst,
+  "FStringFastFlagCredit": "Inst",
   "FFlagHandleAltEnterFullscreenManually": false,
   "DFIntTaskSchedulerTargetFps": 7200000,
   "FFlagFixGraphicsQuality": true,
+  "FFlagDisableDPIScale": true,
+  "FFlagDebugGraphicsPreferD3D11FL10": true,
   "DFIntMaxFrameBufferSize": 4,
   "FFlagDisableNewIGMinDUA": true,
   "DFIntBufferCompressionLevel": 0,
