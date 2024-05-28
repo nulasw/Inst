@@ -31,5 +31,5 @@ No, Inst is made in Batch, which means it's pretty small, and won't take up that
 3. Inst's Fast-Flags is available to everyone, feel free to check the Fast-Flags!
 
 ### Where can I download it?
-Get the latest release of Inst here:
+(Get the latest release of Inst here)[https://github.com/nulasw/Inst/releases/tag/Inst]
 
