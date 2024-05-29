@@ -8,7 +8,7 @@
   "FFlagDebugSkyGray": "True",
   "FIntRenderShadowIntensity": "0",
   "FIntRenderLocalLightUpdatesMax": "8",
-  "FIntRenderLocalLightUpdatesMin": "6"
+  "FIntRenderLocalLightUpdatesMin": "6",
   "FIntRenderLocalLightFadeInMs": "0",
   "DFFlagDebugRenderForceTechnologyVoxel": "True",
   "DFFlagDebugPauseVoxelizer": "True",
