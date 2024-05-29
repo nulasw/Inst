@@ -31,5 +31,6 @@
   "FFlagEnableFavoriteButtonForUgc":"True",
   "FIntV1MenuLanguageSelectionFeaturePerMillageRollout": "0",
   "FFlagChatTranslationSettingEnabled3": "False",
-  "FFlagDisableFeedbackSoothsayerCheck": "False"
+  "FFlagDisableFeedbackSoothsayerCheck": "False",
+  "FFlagAlwaysShowVRToggleV3": "False"
 }
