@@ -16,6 +16,9 @@ Such as:
 - Quicker Game Launch
 - And More!
 
+### Is it bannable?
+No, Inst only changes your game client's fast-flags, and it doesn't modify the game client itself, so there would be no point for this to be bannable.
+
 ### Will Inst cause issue at my device?
 No, Inst only tweak your Roblox with Fast-Flags, being that Inst won't cause issue at your device, and it doesn't requires to run in the background.
 
