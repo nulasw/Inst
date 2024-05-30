@@ -1,6 +1,9 @@
 # Inst
 A FPS-Unlocker for Roblox, and unlock cool features for Roblox!
 
+### Note:
+Roblox recently have updated, and the new update actually decrease your fps. At this point, Inst wouldn't work for now.
+
 ### How does it work?
 Inst tweaks your Roblox with Fast-Flags, and the fast flags was not bloated!
 
