@@ -5,7 +5,7 @@
   "FIntFullscreenTitleBarTriggerDelayMillis": "7200000",
   "FIntCameraMaxZoomDistance": "7200000",
   "FFlagFixGraphicsQuality": "True",
-  "FFlagDisableDPIScale": "True",
+  "DFFlagDisableDPIScale": "True",
   "DFIntDebugFRMQualityLevelOverride": "1",
   "FFlagNewLightAttenuation": "True",
   "FFlagFastGPULightCulling3": "True",
