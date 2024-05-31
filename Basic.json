@@ -1,7 +1,9 @@
 {
   "FStringFastFlagCredit": "Inst",
   "FFlagHandleAltEnterFullscreenManually": "False",
-  "DFIntTaskSchedulerTargetFps": "7200000",
+  "DFIntTaskSchedulerTargetFps": "720",
+  "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
+  "FFlagGameBasicSettingsFramerateCap5": "False",
   "FIntFullscreenTitleBarTriggerDelayMillis": "7200000",
   "FIntCameraMaxZoomDistance": "7200000",
   "FFlagFixGraphicsQuality": "True",
