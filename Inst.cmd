@@ -1,121 +1,135 @@
+:: Hello!
+:: Just a reminder that this script will have every explanation on it
+
+:: Without further ado, let's get started
 @echo off
 title Inst
 
-set "csfolder="
-
+:: Check if Roblox exists in Local AppData
 for /d %%x in ("%localappdata%\Roblox\Versions\*") do (
    if exist "%%x\RobloxPlayerBeta.exe" (
-      set "csfolder=%%x"
-      set "Directory=Local AppData"
-      goto :instFolder
-    )
+      set csfolder=%%x
+      set lct=Local AppData
+      goto instFolder
+   )
 )
 
+:: Check if Roblox exists in Program Files
 for /d %%x in ("C:\Program Files\Roblox\Versions\*") do (
    if exist "%%x\RobloxPlayerBeta.exe" (
-      set "csfolder=%%x"
-      set "Directory=Program Files"
-      goto :instFolder
-    )
+      set csfolder=%%x
+      set lct=Program Files
+      goto instFolder
+   )
 )
 
+:: Check if Roblox exists in Program Files (x86)
 for /d %%x in ("C:\Program Files (x86)\Roblox\Versions\*") do (
    if exist "%%x\RobloxPlayerBeta.exe" (
-      set "csfolder=%%x"
-      set "Directory=Program Files (x86)"
-      goto :instFolder
-    )
+      set csfolder=%%x
+      set lct=Program Files (x86)
+      goto instFolder
+   )
 )
 
+:: If Roblox is not found in any of these locations, ask user to re-install Roblox
+echo Roblox is not found, please re-install your Roblox
+timeout /t 2 /nobreak >nul
+exit
+
+:: If "ClientSettings" folder doesn't exist, create one
 :instFolder
-if defined csfolder (
-  if not exist "%csfolder%\ClientSettings" (
-     md "%csfolder%\ClientSettings"
-    )
+if not exist "%csfolder%\ClientSettings" (
+   mkdir "%csfolder%\ClientSettings"
 )
-
-:instMain
-cls
-echo ----------------------------
-echo           Inst
-echo ----------------------------
-echo  Directory: %Directory%
-echo ----------------------------
-echo [1] Basic Optimize
-echo    (Default)
-echo.
-echo [2] Super Optimize
-echo     (Potato)
-echo.
-echo [3] Remove Inst
-echo.
-echo [4] Exit
-echo ----------------------------
-echo       Version: 03
-echo ----------------------------
-echo     Copyright nulasw
-echo ----------------------------
-echo.
-set /p key="Enter your option: "
-if "%key%"=="1" (
-    goto basic
-)
-if "%key%"=="2" (
-    goto super
-)
-if "%key%"=="3" (
-    goto remove
-)
-if "%key%"=="4" (
-    goto exit
-)
-echo Option not valid, please try again.
-pause
 goto instMain
 
-:basic
+:: Displays the main page if Roblox is found
+:instMain
 cls
-echo Start optimizing...
+echo ^<----------------------- x -----------------------^>
+echo ^<        Inst            ^|    %lct%              ^>
+echo ^<----------------------- x -----------------------^>
+echo ^< 1) Optimal Quality     ^| 3) Uninstall          ^>
+echo ^<                        ^|                       ^>
+echo ^< 2) Potato Quality      ^| 4) Exit               ^>
+echo ^<----------------------- x -----------------------^>
+echo ^<            5) Run Roblox via Inst               ^>
+echo ^<                 (Web Roblox)                    ^>
+echo ^<----------------------- x -----------------------^>
+echo+
+set /p w="> "
+if "%w%" equ "1" (
+    goto optimal
+)
+if "%w%" equ "2" (
+    goto potato
+)
+if "%w%" equ "3" (
+    goto uninstall
+)
+if "%w%" equ "4" (
+    exit
+)
+if "%w%" equ "5" (
+    start "" "https://www.roblox.com/home"
+    exit
+)
+echo Option not valid, please try again
+timeout /t 2 /nobreak >nul
+goto instMain
+
+:: If user's choice is "optimal quality", start downloading optimal.ist
+:: Link: https://github.com/nulasw/Inst/blob/main/Basic.json
+:: If no error is encountered, go back to the main page
+:: If an error exists, tell the user to contact the creator
+:optimal
+cls
+echo Optimizing...
+echo+
 powershell.exe -Command "(New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/nulasw/Inst/main/Basic.json', '%csfolder%\ClientSettings\ClientAppSettings.json')"
-    echo Successfully optimized Roblox!
-    pause
-    goto instMain
+if %errorlevel% equ 0 (
+    echo Successfully imported optimal quality!
+    timeout /t 2 /nobreak >nul
 ) else (
-    echo Failed to optimize Roblox!
-    echo.
-    pause
-    goto instMain
+    echo Failed to import optimal quality!
+    echo+
+    echo Please report this issue to @spectaclet on Discord
+    timeout /t 2 /nobreak >nul
 )
+goto instMain
 
-:super
+:: Same step as optimal quality, but this time we are importing potato quality
+:: Link: https://github.com/nulasw/Inst/blob/main/Super.json
+:potato
 cls
-echo Start optimizing...
+echo Optimizing...
+echo+
 powershell.exe -Command "(New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/nulasw/Inst/main/Super.json', '%csfolder%\ClientSettings\ClientAppSettings.json')"
-    echo Successfully optimized Roblox!
-    pause
-    goto instMain
+if %errorlevel% equ 0 (
+    echo Successfully imported potato quality!
+    timeout /t 2 /nobreak >nul
 ) else (
-    echo Failed to optimize Roblox!
-    echo.
-    pause
-    goto instMain
+    echo Failed to import potato quality!
+    echo+
+    echo Please report this issue to @spectaclet on Discord
+    timeout /t 2 /nobreak >nul
 )
+goto instMain
 
-:remove
+:: If user's choice is "uninstall", delete "ClientSettings" folder in Roblox directory
+:uninstall
 cls
-set /p key="You are removing Inst, are you sure you want to continue (Y/N) : "
-if /i "%key%"=="Y" (
+set /p w="You are removing your 'ClientSettings', are you sure you want to continue (Y/N) "
+if /i "%w%" equ "Y" (
    rmdir /s /q "%csfolder%\ClientSettings"
-   goto instMain
+   echo+
+   echo Uninstallation was successful
+   timeout /t 2 /nobreak >nul
 )
-if /i "%key%"=="N" (
-   echo Yippee!11!111
-   pause
-   goto instMain
-)
-echo Option not valid, please try again.
-pause
-goto remove
-
-:exit
-exit
+   if /i "%w%" equ "N" (
+      goto instMain
+   )
+   echo Option not valid, please try again
+   timeout /t 2 /nobreak >nul
+   goto uninstall
