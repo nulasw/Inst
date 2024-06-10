@@ -48,7 +48,7 @@ goto instMain
 :instMain
 cls
 echo ^<----------------------- x -----------------------^>
-echo ^<        Inst            ^|    %lct%              ^>
+echo ^<        Inst            ^|    %lct%              
 echo ^<----------------------- x -----------------------^>
 echo ^< 1) Optimal Quality     ^| 3) Uninstall          ^>
 echo ^<                        ^|                       ^>
