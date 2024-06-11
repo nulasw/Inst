@@ -2,7 +2,7 @@
 A FPS-Unlocker for Roblox, and unlock cool features for Roblox!
 
 ### Note:
-Roblox recently have updated, and the new update actually decrease your fps. At this point, Inst wouldn't work for now.
+After Roblox's update, fast flags won't boost your FPS as much as they used to, but Inst will try to boost your FPS as much as possible.
 
 ### How does it work?
 Inst tweaks your Roblox with Fast-Flags, and the fast flags was not bloated!
@@ -11,12 +11,12 @@ Inst tweaks your Roblox with Fast-Flags, and the fast flags was not bloated!
 Inst doesn't just unlock your FPS, but give you some cool features.
 Such as:
 
-- FPS Unlocker
+- Remove FPS Cap (For Most People)
 - True Graphics Quality (21 instead of 10)
-- Gray Sky
+- Gray Sky (Potato Quality only)
 - Disable Unnecessary Features (Chrome UI, Chat Translation)
-- Alt-Enter Fix
-- Quicker Game Launch
+- Alt-Enter Fix (True Fullscreen)
+- Smoother Gameplay
 - And More!
 
 ### Is it bannable?
