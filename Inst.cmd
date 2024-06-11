@@ -50,9 +50,9 @@ cls
 echo ^<----------------------- x -----------------------^>
 echo ^<        Inst            ^|    %lct%              
 echo ^<----------------------- x -----------------------^>
-echo ^< 1) Optimal Quality     ^| 3) Uninstall          ^>
-echo ^<                        ^|                       ^>
-echo ^< 2) Potato Quality      ^| 4) Exit               ^>
+echo ^< 1) Optimal Quality     ^| 3) Uninstall           ^>
+echo ^<                        ^|                        ^>
+echo ^< 2) Potato Quality      ^| 4) Exit                ^>
 echo ^<----------------------- x -----------------------^>
 echo ^<            5) Run Roblox via Inst               ^>
 echo ^<                 (Web Roblox)                    ^>
@@ -126,10 +126,12 @@ if /i "%w%" equ "Y" (
    echo+
    echo Uninstallation was successful
    timeout /t 2 /nobreak >nul
+   goto instMain
+) else (
+   echo Failed to uninstall "ClientSettings"
+   timeout /t 2 /nobreak >nul
+   goto instMain
 )
    if /i "%w%" equ "N" (
       goto instMain
-   )
-   echo Option not valid, please try again
-   timeout /t 2 /nobreak >nul
-   goto uninstall
+)
