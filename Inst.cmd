@@ -1,7 +1,7 @@
 :: Hello!
-:: Just a reminder that this script will have every explanation on it
+:: Just a reminder that this script's command will have explanation on it
 
-:: Without further ado, let's get started
+:: Without further ado, let's get started!
 @echo off
 title Inst
 
