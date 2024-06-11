@@ -80,14 +80,14 @@ timeout /t 2 /nobreak >nul
 goto instMain
 
 :: If user's choice is "optimal quality", start downloading optimal.ist
-:: Link: https://github.com/nulasw/Inst/blob/main/Basic.json
+:: Link: https://github.com/nulasw/Inst/blob/main/Optimal.ist
 :: If no error is encountered, go back to the main page
 :: If an error exists, tell the user to contact the creator
 :optimal
 cls
 echo Optimizing...
 echo+
-powershell.exe -Command "(New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/nulasw/Inst/main/Basic.json', '%csfolder%\ClientSettings\ClientAppSettings.json')"
+powershell.exe -Command "(New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/nulasw/Inst/main/Optimal.ist', '%csfolder%\ClientSettings\ClientAppSettings.json')"
 if %errorlevel% equ 0 (
     echo Successfully imported optimal quality!
     timeout /t 2 /nobreak >nul
@@ -100,12 +100,12 @@ if %errorlevel% equ 0 (
 goto instMain
 
 :: Same step as optimal quality, but this time we are importing potato quality
-:: Link: https://github.com/nulasw/Inst/blob/main/Super.json
+:: Link: https://github.com/nulasw/Inst/blob/main/Potato.ist
 :potato
 cls
 echo Optimizing...
 echo+
-powershell.exe -Command "(New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/nulasw/Inst/main/Super.json', '%csfolder%\ClientSettings\ClientAppSettings.json')"
+powershell.exe -Command "(New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/nulasw/Inst/main/Potato.ist', '%csfolder%\ClientSettings\ClientAppSettings.json')"
 if %errorlevel% equ 0 (
     echo Successfully imported potato quality!
     timeout /t 2 /nobreak >nul
