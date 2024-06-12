@@ -11,6 +11,7 @@
   "FFlagNewLightAttenuation": "True",
   "FFlagFastGPULightCulling3": "True",
   "DFIntMaxFrameBufferSize": "4",
+  "FFlagGraphicsTextureCopy": "True",
   "FFlagDisableNewIGMinDUA": "True",
   "FFlagDebugGraphicsPreferD3D11FL10": "True",
   "FFlagEnableInGameMenuChromeABTest2": "False",
