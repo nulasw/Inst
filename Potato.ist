@@ -12,6 +12,7 @@
   "FIntRenderLocalLightUpdatesMax": "8",
   "FIntRenderLocalLightUpdatesMin": "6",
   "FIntRenderLocalLightFadeInMs": "0",
+  "FFlagGraphicsTextureCopy": "True",
   "DFFlagDebugRenderForceTechnologyVoxel": "True",
   "DFFlagDebugPauseVoxelizer": "True",
   "DFIntCSGLevelOfDetailSwitchingDistance": "1",
