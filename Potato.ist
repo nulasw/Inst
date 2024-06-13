@@ -8,6 +8,7 @@
   "FIntCameraMaxZoomDistance": "7200000",
   "FFlagFixGraphicsQuality": "True",
   "FFlagDebugSkyGray": "True",
+  "FIntDebugTextureManagerSkipMips": "1",
   "FIntRenderShadowIntensity": "0",
   "FIntRenderLocalLightUpdatesMax": "8",
   "FIntRenderLocalLightUpdatesMin": "6",
