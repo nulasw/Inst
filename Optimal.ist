@@ -17,7 +17,6 @@
                    "FFlagHandleAltEnterFullscreenManually": "False",
                    "FFlagFixGraphicsQuality": "True",
                    "FFlagDisableNewIGMinDUA": "True",
-                   "FFlagDebugGraphicsPreferD3D11FL10": "True",
                    "FFlagDebugDisableTelemetryEphemeralCounter": "True",
                    "FFlagDebugDisableTelemetryEphemeralStat": "True",
                    "FFlagDebugDisableTelemetryEventIngest": "True",
