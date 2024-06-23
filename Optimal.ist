@@ -4,7 +4,6 @@
                    "FFlagEnableInGameMenuChromeABTest3": "False",
                    "FFlagDebugForceFutureIsBrightPhase3": "True",
                    "FFlagNewLightAttenuation": "True",
-                   "FFlagFastGPULightCulling3": "True",
                    "FIntFullscreenTitleBarTriggerDelayMillis": "3600000",
                    "FFlagAlwaysShowVRToggleV3": "False",
                    "FFlagAdServiceEnabled": "False",
