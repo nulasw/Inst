@@ -10,7 +10,6 @@
                    "FIntFRMMinGrassDistance": "0",
                    "FIntFRMMaxGrassDistance": "0",
                    "FIntRenderGrassDetailStrands": "0",
-                   "FIntRenderGrassHeightScaler": "0",
                    "FIntRenderShadowIntensity": "0",
                    "FIntDebugForceMSAASamples": "0",
                    "FIntV1MenuLanguageSelectionFeaturePerMillageRollout": "0",
